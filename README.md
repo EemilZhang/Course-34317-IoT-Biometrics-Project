@@ -46,5 +46,5 @@ The client has the following options:
 # Circuit
 e-Health Sensor Shield not pictured but goes on top of the Arduino Uno R3.
 
--> Picture here
+![Alt text](diagram.png "circuit")
 
