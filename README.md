@@ -7,25 +7,11 @@ A IoT biometrics reading device, which utilizes the Amazon AWS IoT service to co
 * RGB LED turns blue when device is in Sleep Mode.
 * RGB LED turns green when the switchbutton is pressed, indicating that device is active.
 * RGB LED turns cyan when the pulsioximeter is transmitting data. 
+* 
 #Client Functions
 The client has the following options:
 
- My core concept is a IoT biometrics reader, which utilizes a Arduino 
-> UNO
-> R3 with a e-Health sensor shield and Pulsioximeter sensor. It will
-> then be connected (through a physical connection) to an Arduino Yún
-> which will transmit collected data to the AWS IoT platform.
-> Furthermore I will have a python based client, independent from the
-> Arduino, that provides access to the uploaded data and/or requests a
-> upload of data.
-> 
-> Conceptually i'm thinking of a healthcare provider being able to
-> remotely monitor patient biometrics, by being able to request/analyse
-> biometric data in tandem with direct patient-doctor e-communication.
-> This would reduce the amount of time spent both by patients and
-> healthcare providers in both initial diagnosing and extended
-> non-intensive patient monitoring.
-
+The core concept is a IoT biometrics reader, which utilizes a Arduino UNO R3 with a e-Health sensor shield and Pulsioximeter sensor. It connects to an Arduino Yún which transmits the collected data to the AWS IoT platform. Furthermore a python based client, independent from the Arduino, provides access to the uploaded data and enables data upload requests. Conceptually a healthcare providerwould be able to remotely monitor patient biometrics, by being able to request/analyse biometric data in tandem with direct patient e-communication. This would reduce the amount of time spent both by patients and healthcare providers in both initial diagnosing and extended non-intensive patient monitoring.
 
 # Setup
 1. Download and install 2 versions of the Arduino IDE, 1.6.0+ for the Arduino Yún and 1.0.1+ for the Arduino Uno R3. https://www.arduino.cc/en/Main/Software>.
