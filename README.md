@@ -1,5 +1,7 @@
 # Overview
 A IoT biometrics reading device, which utilizes the Amazon AWS IoT service to communicate with a python-based desktop client.
+
+The core concept is a IoT biometrics reader, which utilizes a Arduino UNO R3 with a e-Health sensor shield and Pulsioximeter sensor. It connects to an Arduino Yún which transmits the collected data to the AWS IoT platform. Furthermore a python based client, independent from the Arduino, provides access to the uploaded data and enables data upload requests. Conceptually a healthcare providerwould be able to remotely monitor patient biometrics, by being able to request/analyse biometric data in tandem with direct patient e-communication. This would reduce the amount of time spent both by patients and healthcare providers in both initial diagnosing and extended non-intensive patient monitoring.
 #Device Functions
 * Red LED turns on when a connection is successfully established to the AWS IoT service.
 * Yellow LED turns on when there's a pending reading request from the python client.
@@ -10,8 +12,9 @@ A IoT biometrics reading device, which utilizes the Amazon AWS IoT service to co
 * 
 #Client Functions
 The client has the following options:
-
-The core concept is a IoT biometrics reader, which utilizes a Arduino UNO R3 with a e-Health sensor shield and Pulsioximeter sensor. It connects to an Arduino Yún which transmits the collected data to the AWS IoT platform. Furthermore a python based client, independent from the Arduino, provides access to the uploaded data and enables data upload requests. Conceptually a healthcare providerwould be able to remotely monitor patient biometrics, by being able to request/analyse biometric data in tandem with direct patient e-communication. This would reduce the amount of time spent both by patients and healthcare providers in both initial diagnosing and extended non-intensive patient monitoring.
+* Request biometric reading.
+* Cancel biometric reading requests.
+* View latest biometric reading.
 
 # Setup
 1. Download and install 2 versions of the Arduino IDE, 1.6.0+ for the Arduino Yún and 1.0.1+ for the Arduino Uno R3. https://www.arduino.cc/en/Main/Software>.
