@@ -1,18 +1,13 @@
 import AWSIoTPythonSDK.MQTTLib as AWSIoTPyMQTT
 import sys
 import os
-#import logging
 import time
 import json
-#import getopt
-#from pandas import DataFrame
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Global Variables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 
-# host = input('Please enter your unique endpoint address: ')
-host = "a2rcd1k48ok85g.iot.us-west-2.amazonaws.com"
-#rootCA = input('Please enter the filepath of your Root CA credential file: ')
-rootCA = "/Users/Eemil/Desktop/root_CA.crt"
+host = input('Please enter your unique endpoint address: ')
+rootCA = input('Please enter the filepath of your Root CA credential file: ')
 AWSAccessKeyID = input('Please enter your AWS Access Key: ')
 AWSSecretAccessKey = input('Please enter your AWS Secret Access Key: ')
 
